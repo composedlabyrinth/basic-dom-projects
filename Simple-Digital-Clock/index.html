@@ -32,6 +32,11 @@
       <div id="banner"><span>Your local time</span></div>
       <div id="clock"></div>
     </div>
-    <script src="DC.js"></script>
+    <script> const clock = document.querySelector('#clock')
+             setInterval(function(){
+              let date = new Date()
+              clock.innerHTML = date.toLocaleTimeString()
+              }, 1000)
+    </script>
   </body>
 </html>
